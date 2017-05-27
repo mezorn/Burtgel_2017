@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mezorn.burtgel_2017.DialogLoginActivity"
+    android:background="@drawable/dialogback"
+    android:paddingLeft="26dp"
+    android:paddingRight="26dp"
+    android:paddingTop="@dimen/btn_paddingRight">
+
+    <TextView
+        android:id="@+id/login_dialog_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_dialog_header"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:id="@+id/login_dialog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_dialog_header"
+        android:layout_marginTop="@dimen/btn_paddingRight"
+        android:layout_marginBottom="@dimen/btn_paddingRight"
+        android:text="name name"/>
+
+    <Button
+        android:id="@+id/btn_yes_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/greebMain"
+        android:text="@string/dialog_yes"
+        style="?android:attr/buttonBarButtonStyle"
+android:layout_below="@id/login_dialog_name"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/btn_no_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/greebMain"
+        android:text="@string/dialog_no"
+        android:layout_toLeftOf="@+id/btn_yes_dialog"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_below="@id/login_dialog_name"
+
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>

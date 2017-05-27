@@ -32,12 +32,13 @@
             android:name=".VoterActivity"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
-        <activity android:name=".ChooseNamActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".ChooseNamActivity"
             android:label="@string/dropdown_choose"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"
-            ></activity>
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".DialogLoginActivity"></activity>
     </application>
 
 </manifest>

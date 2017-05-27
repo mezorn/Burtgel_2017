@@ -9,11 +9,15 @@ import io.realm.annotations.RealmClass;
 @RealmClass
 public class User extends RealmObject {
 
+    private String id;
     private String          name;
     private int             age;
     private String gender;
     private String register;
     private String address;
+
+
+
 
 
 

@@ -19,5 +19,8 @@
     <string name="hint_work">Эрхэлдэг ажил оруулга уу?</string>
     <string name="facebook">Facebook хаяг оруулна уу?</string>
     <string name="twitter">Twitter хаяг оруулна уу?</string>
+    <string name="login_dialog_header">Энэ та мөн үү?</string>
+    <string name="dialog_yes">МӨН</string>
+    <string name="dialog_no">БИШ</string>
 
 </resources>
