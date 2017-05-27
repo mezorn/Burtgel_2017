@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mezorn.burtgel_2017.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/bgColor">
+    <RelativeLayout
+        android:id="@+id/statusbar_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/red"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_notsynced_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Илгээгдээгүй мэдээлэл: "
+            android:textSize="10sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_notsynced_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:text="Илгээгдээгүй мэдээлэл: "
+            android:textSize="10sp"
+            />
+    </RelativeLayout>
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="true"
+        android:layout_below="@id/statusbar_tv"
+        android:queryHint="Хайлт"
+        android:background="@color/greenLight"
+
+      >
+
+    </SearchView>
+
+
+    <LinearLayout
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+
+        android:weightSum="500">
+        <Button
+            android:id="@+id/filter_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:layout_gravity="center"
+            android:text="@string/filter_all"
+            android:textSize="@dimen/text_default_size"
+            android:padding="@dimen/btn_paddingtop"
+            android:background="@drawable/button_selector"/>
+        <Button
+            android:id="@+id/filter_namaar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="98"
+            android:layout_gravity="center"
+            android:text="@string/filter_namaar"
+            android:textSize="@dimen/text_default_size"
+            android:padding="@dimen/btn_paddingtop"
+            android:background="@drawable/button_selector"/>
+        <Button
+            android:id="@+id/filter_uhuulga"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:layout_gravity="center"
+            android:text="@string/filter_material"
+            android:textSize="@dimen/text_default_size"
+            android:padding="@dimen/btn_paddingtop"
+            android:background="@drawable/button_selector"/>
+        <Button
+            android:id="@+id/filter_songuuli"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="115"
+            android:layout_gravity="center"
+            android:text="@string/filter_election"
+            android:textSize="@dimen/text_default_size"
+            android:padding="@dimen/btn_paddingtop"
+            android:background="@drawable/button_selector"/>
+        <Button
+            android:id="@+id/filter_bag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="97"
+            android:layout_gravity="center"
+            android:text="@string/filter_bag"
+            android:textSize="@dimen/text_default_size"
+            android:padding="@dimen/btn_paddingtop"
+            android:background="@drawable/button_selector"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_voters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search"
+        android:layout_above="@+id/filter"
+        android:background="@color/bgColor"/>
+
+</RelativeLayout>

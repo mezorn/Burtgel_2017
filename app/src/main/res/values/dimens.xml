@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="et_textSize">13sp</dimen>
+    <dimen name="btn_paddingtop">5dp</dimen>
+    <dimen name="btn_paddingRight">10dp</dimen>
+    <dimen name="text_default_size">12sp</dimen>
+</resources>

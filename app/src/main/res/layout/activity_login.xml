@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/bgColor"
+    tools:context="com.mezorn.burtgel_2017.LoginActivity"
+    android:weightSum="70"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+    <EditText
+        android:id="@+id/et_token"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/token_et_hint"
+        android:maxLines="1"
+        android:maxLength="6"
+        android:background="@drawable/editbox"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/et_textSize"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:inputType="number"
+        />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_login_btn"
+            style="@style/whiteText"
+
+            android:paddingLeft="@dimen/btn_paddingRight"
+            android:paddingRight="@dimen/btn_paddingRight"
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/et_textSize"
+            android:background="@drawable/button_selector"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical"/>
+
+</LinearLayout>

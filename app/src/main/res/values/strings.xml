@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Burtgel_2017</string>
+    <string name="text_login_btn">НЭВТРЭХ</string>
+    <string name="token_et_hint">Кодоо оруулна уу</string>
+    <string name="toast_wrong_token">Код буруу байна</string>
+    <string name="filter_all">БҮГД</string>
+    <string name="filter_namaar">НАМААР</string>
+    <string name="filter_material">УХУУЛГА</string>
+    <string name="filter_election">СОНГУУЛЬ</string>
+    <string name="filter_bag">БАГААР</string>
+    <string name="string_nam">НАМ</string>
+    <string name="string_uhuulga">УХУУЛГА</string>
+    <string name="songuuli">СОНГУУЛЬ</string>
+    <string name="dropdown_choose">Сонголтоо хийнэ үү</string>
+    <string name="string_ok">OK</string>
+    <string name="string_cancel">БОЛИХ</string>
+    <string name="string_choose_color_nam">Намын өнгө сонгох</string>
+    <string name="hint_phone_number">Утасны дугаар оруулна уу?</string>
+    <string name="hint_work">Эрхэлдэг ажил оруулга уу?</string>
+    <string name="facebook">Facebook хаяг оруулна уу?</string>
+    <string name="twitter">Twitter хаяг оруулна уу?</string>
+
+</resources>

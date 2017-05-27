@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mezorn.burtgel_2017.VoterActivity"
+    android:orientation="horizontal"
+    android:background="@color/bgColor"
+    android:baselineAligned="false">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/action_bar"
+            android:layout_height="?android:actionBarSize"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:weightSum="70"
+            android:background="@color/greenLight"
+            android:layout_gravity="start"
+
+
+            >
+            <LinearLayout
+                android:id="@+id/actionbar_btn_clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@color/greenLight"
+                android:gravity="center"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                   android:src="@drawable/back_btn"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@color/greenLight"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ЭНД ХАЯГ БАЙРЛАНА"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/et_textSize"
+                    android:textColor="@color/white"
+
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionbar_btn_check"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@color/greenLight">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/ic_action_name"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:paddingTop="@dimen/btn_paddingtop"
+            android:paddingRight="@dimen/btn_paddingRight"
+            android:paddingLeft="@dimen/btn_paddingRight"
+            android:orientation="vertical"
+            android:layout_below="@+id/action_bar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgColor"
+                android:padding="@dimen/btn_paddingRight"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_voter_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Хан-Уул дүүрэг 15-р хороо Их Монгол улсын гудамж Хансвилл 101-1-902"/>
+                <TextView
+                    android:id="@+id/txt_voter_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/btn_paddingRight"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Амгаланбаатар НАРАНБАЯР"/>
+                <TextView
+                    android:id="@+id/txt_voter_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/btn_paddingtop"
+                    android:text="ЧМ84110119"
+                    android:textColor="@android:color/darker_gray"/>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/nam_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/btn_paddingRight"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/spinner_bg"
+
+                android:padding="@dimen/btn_paddingRight"
+                android:textColor="@color/black">
+                <TextView
+                    android:id="@+id/voter_nam_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="НАМ"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/voter_nam_status"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/uhuulga_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/btn_paddingRight"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/spinner_bg"
+
+                android:padding="@dimen/btn_paddingRight"
+                android:textColor="@color/black">
+                <TextView
+                    android:id="@+id/voter_uhuulga_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="УХУУЛГА"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/voter_uhuulga_status"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/songuuli_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/btn_paddingRight"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/spinner_bg"
+
+                android:padding="@dimen/btn_paddingRight"
+                android:textColor="@color/black">
+                <TextView
+                    android:id="@+id/voter_songuuli_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ӨГНӨ"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="СОНГУУЛЬ"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/voter_songuuli_status"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_phone_num"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_phone_number"
+                android:maxLines="1"
+                android:maxLength="8"
+                android:background="@drawable/editbox"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/et_textSize"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="@dimen/btn_paddingRight"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/et_work"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_work"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/btn_paddingRight"
+
+                android:background="@drawable/editbox"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/et_textSize"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/et_facebook"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/facebook"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/btn_paddingRight"
+
+                android:background="@drawable/editbox"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/et_textSize"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/et_twitter"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/twitter"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/btn_paddingRight"
+
+                android:background="@drawable/editbox"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/et_textSize"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:inputType="text"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
