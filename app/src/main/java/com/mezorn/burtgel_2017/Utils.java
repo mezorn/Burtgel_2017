@@ -30,7 +30,7 @@ public class Utils extends Storage {
 
     public static boolean isConnected(){
         try {
-            InetAddress ipAddr = InetAddress.getByName("ubcab.mn"); //You can replace it with your name
+            InetAddress ipAddr = InetAddress.getByName("google.com"); //You can replace it with your name
 
             if (ipAddr.equals("")) {
                 return false;
