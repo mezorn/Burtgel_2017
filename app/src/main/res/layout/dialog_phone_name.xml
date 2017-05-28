@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogback"
+    android:paddingLeft="26dp"
+    android:paddingRight="26dp"
+    android:paddingTop="@dimen/btn_paddingRight">
+
+    <TextView
+        android:id="@+id/dialog_phonename_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_phone_name_header"
+        android:textColor="@color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/et_name_dialog"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"
+
+        android:layout_below="@id/dialog_phonename_header"
+        android:layout_marginTop="@dimen/btn_paddingRight"
+
+        android:maxLines="1"
+
+        android:background="@drawable/editbox"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/et_textSize"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:inputType="text"
+        />
+
+
+    <EditText
+        android:id="@+id/et_phone_dialog"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_phone_number"
+
+        android:layout_below="@id/et_name_dialog"
+        android:layout_marginTop="@dimen/btn_paddingRight"
+        android:layout_marginBottom="@dimen/btn_paddingRight"
+        android:maxLines="1"
+        android:maxLength="8"
+        android:background="@drawable/editbox"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/et_textSize"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btn_ok_phone_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/greebMain"
+        android:text="@string/dialog_yes"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_below="@id/et_phone_dialog"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"/>
+
+
+
+</RelativeLayout>

@@ -22,5 +22,7 @@
     <string name="login_dialog_header">Энэ та мөн үү?</string>
     <string name="dialog_yes">МӨН</string>
     <string name="dialog_no">БИШ</string>
+    <string name="dialog_phone_name_header">Нэр утасаа оруулна уу</string>
+    <string name="hint_name">Нэрээ оруулна уу</string>
 
 </resources>
