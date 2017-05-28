@@ -39,7 +39,7 @@ public class Utils extends Storage {
     static String KEY_HESEG_IN_BAGKHOROO = "heseg_in_bagkhoroo";
     static String KEY_FULLNAME = "fullname";
     static String KEY_PHONE = "phone";
-
+    public static String BASE_URL = "http://202.55.182.178";
     public static String getID(Context context) {
         return getInfo(KEY_ID, context);
     }
@@ -150,5 +150,9 @@ public class Utils extends Storage {
     public static boolean isNetworkAvailable(final Context context) {
         final ConnectivityManager connectivityManager = ((ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE));
         return connectivityManager.getActiveNetworkInfo() != null && connectivityManager.getActiveNetworkInfo().isConnected();
+    }
+
+    public static APIInterface getSOService() {
+        return APIClient.getClient(BASE_URL).create(APIInterface.class);
     }
 }

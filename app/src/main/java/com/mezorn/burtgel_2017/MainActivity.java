@@ -61,6 +61,7 @@ public class MainActivity extends Activity implements SearchView.OnQueryTextList
 
 
         Log.i("SHINE TOKEN : ", Utils.getToken(this));
+        Log.i("User code ", Utils.getCode(this));
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

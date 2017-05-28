@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/token_et_hint"
         android:maxLines="1"
-        android:maxLength="6"
+        android:maxLength="8"
         android:background="@drawable/editbox"
         android:layout_gravity="center_vertical"
         android:singleLine="true"

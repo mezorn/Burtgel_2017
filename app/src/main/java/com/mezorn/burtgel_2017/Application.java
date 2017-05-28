@@ -1,6 +1,7 @@
 package com.mezorn.burtgel_2017;
 
 import android.content.Context;
+import android.support.multidex.MultiDex;
 
 import com.google.gson.Gson;
 
@@ -26,7 +27,7 @@ public class Application extends android.app.Application {
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
 
-
+        MultiDex.install(this);
     }
 
     Gson gson;

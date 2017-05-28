@@ -16,6 +16,11 @@ public class User extends RealmObject {
     private String register;
     private String address;
 
+    /*
+    * Error:Execution failed for task ':app:transformClassesWithMultidexlistForDebug'.
+> java.io.IOException: Can't write intermediates/multi-dex/debug/componentClasses.jar (Can't read .gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/ gson-2.8.0.jar] (Duplicate zip entry [gson-2.8.0.jar:com/google/gson/annotations/Expose.class]))
+    * */
+
 
 
 
