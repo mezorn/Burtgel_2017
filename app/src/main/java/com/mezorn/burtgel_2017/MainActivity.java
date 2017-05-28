@@ -1,7 +1,10 @@
 package com.mezorn.burtgel_2017;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,12 +27,17 @@ public class MainActivity extends Activity implements SearchView.OnQueryTextList
     Button filterAll, filterNamaar, filterUhuulga, filterSonguuli, filterBag;
     // Generate sample data
     public static String filterID="";
-
+    private BroadcastReceiver receiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        receiver = new NetworkChangeReceiver();
+        registerReceiver(receiver, filter);
+
 
         voterNameList = new String[]{"Амгаланбаатар Наранбаяр", "Одонсүрэн Золбаяр", "Батсайхан Эрдэм",
                 "Бат-Орших Манлай", "Нөхөр Сүхээ"};
@@ -141,5 +149,13 @@ public class MainActivity extends Activity implements SearchView.OnQueryTextList
         adapter.filter(text);
         return false;
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(receiver);
+
+    }
+
 
 }
